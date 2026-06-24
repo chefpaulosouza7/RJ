@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Paulo Souza | Consultor Gastronômico RJ | Chef Executivo de Cozinha Rio de Janeiro e Saquarema</title>
+
+<meta name="description" content="Consultoria gastronômica, treinamentos operacionais, implantação de delivery, fichas técnicas and redução de custos para restaurantes, hotéis, buffets e operações gastronômicas.">
+
+<meta name="keywords" content="
+consultor gastronômico RJ,
+consultor gastronômico rio de janeiro,
+chef consultor rio de janeiro,
+chef executivo de cozinha RJ,
+consultoria gastronômica RJ,
+consultoria para restaurantes RJ,
+consultoria para buffet RJ,
+treinamento para restaurantes,
+implantação de delivery,
+fichas técnicas gastronomia,
+controle de custos restaurante">
+
+<meta property="og:title" content="Paulo Souza | Chef Executivo de Cozinha">
+<meta property="og:description" content="Consultoria gastronômica para restaurantes, hotéis, buffets e operações gastronômicas.">
+<meta property="og:image" content="images/paulo-hero.png">
+<meta property="og:type" content="website">
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--preto:#080808;
+--vermelho:#d60000;
+--vermelho-escuro:#8b0000;
+--branco:#ffffff;
+--cinza:#d9d9d9;
+--whatsapp:#25d366;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:var(--preto);
+color:white;
+overflow-x:hidden;
+}
+
+.container{
+width:90%;
+max-width:1300px;
+margin:auto;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(0,0,0,.95);
+backdrop-filter:blur(10px);
+z-index:999;
+border-bottom:1px solid rgba(214,0,0,.3);
+}
+
+.top-bar {
+background:var(--vermelho);
+color:white;
+text-align:center;
+padding:10px 15px;
+font-size:0.9rem;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:15px;
+}
+
+.badge-precos {
+background:white;
+color:var(--vermelho);
+padding:3px 12px;
+border-radius:20px;
+font-weight:700;
+font-size:0.8rem;
+text-transform:uppercase;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+}
+
+.logo{
+height:70px;
+}
+
+.menu{
+display:flex;
+gap:30px;
+}
+
+.menu a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+.menu a:hover{
+color:var(--vermelho);
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+background:
+linear-gradient(to right, rgba(0,0,0,.92), rgba(0,0,0,.55)),
+url('images/paulo-hero.png');
+background-size:cover;
+background-position:center;
+}
+
+.hero-content{
+max-width:700px;
+padding-top:140px;
+}
+
+.nome{
+font-family:'Bebas Neue',sans-serif;
+font-size:2rem;
+color:var(--vermelho);
+letter-spacing:2px;
+}
+
+.cargo{
+font-size:1rem;
+text-transform:uppercase;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-family:'Bebas Neue';
+font-size:5rem;
+line-height:1;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.2rem;
+line-height:1.7;
+color:var(--cinza);
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+border-radius:6px;
+text-decoration:none;
+font-weight:700;
+margin-right:15px;
+transition:.3s;
+}
+
+.btn-whats{
+background:var(--whatsapp);
+color:white;
+}
+
+.btn-red{
+background:var(--vermelho);
+color:white;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.faixa{
+background:var(--vermelho);
+padding:20px;
+text-align:center;
+font-weight:700;
+}
+
+.faixa span {
+display: inline-block;
+}
+
+section{
+padding:90px 0;
+}
+
+.titulo{
+font-family:'Bebas Neue';
+font-size:3.5rem;
+text-align:center;
+margin-bottom:50px;
+color:white;
+}
+
+.sobre{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.sobre img{
+width:100%;
+border-radius:15px;
+}
+
+.sobre p{
+line-height:1.9;
+color:var(--cinza);
+text-align:justify;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.card{
+background:#111;
+padding:35px;
+border:1px solid #222;
+border-radius:12px;
+transition:.3s;
+}
+
+.card:hover{
+border-color:var(--vermelho);
+transform:translateY(-8px);
+}
+
+.card h3{
+color:var(--vermelho);
+margin-bottom:20px;
+font-size:1.3rem; 
+white-space: nowrap; 
+}
+
+.card ul{
+padding-left:18px;
+line-height:2;
+}
+
+.card ul li {
+font-size: 0.9rem;
+white-space: nowrap; 
+}
+
+.problemas{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.box{
+background:#111;
+padding:40px;
+border-radius:12px;
+}
+
+.box h3{
+margin-bottom:20px;
+font-size:1.7rem;
+}
+
+.box ul{
+line-height:2.2;
+list-style:none;
+}
+
+.beneficios{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:20px;
+}
+
+.beneficio{
+background:#111;
+padding:30px;
+border-radius:10px;
+text-align:center;
+}
+
+.numero{
+font-size:3rem;
+font-weight:bold;
+color:var(--vermelho);
+}
+
+.atuacao{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+.item{
+background:#111;
+padding:25px;
+text-align:center;
+border-radius:10px;
+}
+
+.cta{
+background:linear-gradient(135deg,var(--vermelho),var(--vermelho-escuro));
+text-align:center;
+}
+
+.cta h2{
+font-family:'Bebas Neue';
+font-size:4rem;
+margin-bottom:20px;
+}
+
+.cta p{
+font-size:1.2rem;
+margin-bottom:30px;
+}
+
+footer{
+background:#000;
+padding:50px 0;
+text-align:center;
+border-top:1px solid #222;
+}
+
+footer img{
+height:100px;
+margin-bottom:20px;
+}
+
+.whatsapp-float{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25d366;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:32px;
+text-decoration:none;
+color:white;
+box-shadow:0 0 20px rgba(0,0,0,.3);
+z-index:999;
+}
+
+/* =========================================
+   CONFIGURAÇÕES EXCLUSIVAS PARA CELULARES
+   ========================================= */
+@media(max-width:992px){
+    /* Ajuste da barra superior */
+    .top-bar { flex-direction: column; gap: 8px; text-align: center; padding: 12px; }
+    
+    /* Ajuste do topo (Hero) */
+    .hero { background-position: 65% center; }
+    .hero-content { padding-top: 160px; text-align: center; }
+    .hero h1{ font-size: 3rem; }
+    
+    /* Ajuste dos botões para ocuparem 100% no celular */
+    .btn { display: block; margin: 0 auto 15px auto; width: 100%; text-align: center; max-width: 320px; }
+    
+    /* Transformando as grades (colunas) em uma coluna só */
+    .sobre, .cards, .problemas, .beneficios, .atuacao { grid-template-columns:1fr; gap: 25px; }
+    
+    /* Esconde o menu de texto no topo */
+    .menu { display:none; }
+    
+    /* Ajuste da faixa vermelha para lista vertical ao invés de usar os " | " */
+    .faixa { padding: 25px 15px; }
+    .faixa span { display: block; margin-bottom: 10px; font-size: 1rem; }
+    .faixa .separador { display: none; } /* Esconde as barras verticais no celular */
+    
+    /* Reduz o tamanho dos títulos das seções para não quebrar a tela */
+    .titulo { font-size: 2.8rem; margin-bottom: 35px; }
+    .cta h2 { font-size: 2.8rem; }
+    
+    /* Permite que os textos dos cards quebrem a linha no celular se necessário, evitando barra de rolagem horizontal */
+    .card h3, .card ul li { white-space: normal; }
+    .card h3 { text-align: center; }
+    
+    /* Espaçamento extra abaixo da foto do "Sobre" no celular */
+    .sobre img { margin-bottom: 15px; }
+}
+</style>
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"ProfessionalService",
+"name":"Paulo Souza Consultoria Gastronômica",
+"description":"Consultoria gastronômica, treinamento operacional e assessoria para restaurantes, hotéis e buffets.",
+"telephone":"+55-22-98167-7446",
+"email":"chefpaulosouza7@gmail.com",
+"areaServed":"Rio de Janeiro",
+"url":"https://www.seudominio.com.br",
+"logo":"https://www.seudominio.com.br/images/logo-paulo-souza.png",
+"image":"https://www.seudominio.com.br/images/paulo-hero.png",
+"priceRange":"$$",
+"serviceType":[
+"Consultoria Gastronômica",
+"Treinamento de Equipes",
+"Implantação de Delivery",
+"Padronização Operacional",
+"Controle de Custos"
+]
+}
+</script>
+</head>
+
+<body>
+
+<header>
+<div class="top-bar">
+    <span class="badge-precos">Preços Acessíveis</span>
+    <span>Atendimento no Rio de Janeiro e Região dos Lagos</span>
+</div>
+<div class="container nav">
+
+<img src="images/logo-paulo-souza.png" class="logo" alt="Paulo Souza Logo">
+
+<nav class="menu">
+<a href="#sobre">Sobre</a>
+<a href="#servicos">Serviços</a>
+<a href="#beneficios">Benefícios</a>
+<a href="#atuacao">Atuação</a>
+<a href="#contato">Contato</a>
+</nav>
+
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+
+<div class="nome">PAULO SOUZA</div>
+
+<div class="cargo">
+Chef Executivo de Cozinha • Consultoria & Assessoria
+</div>
+
+<h1>
+Transforme sua cozinha em uma operação mais lucrativa e eficiente!
+</h1>
+
+<p>
+Consultoria, assessoria e treinamentos para restaurantes, buffets, hotéis, casas de festa e operações gastronômicas.
+</p>
+
+<a href="https://wa.me/5522981677446" class="btn btn-whats">
+Solicitar orçamento via Whatsapp
+</a>
+
+<a href="mailto:chefpaulosouza7@gmail.com" class="btn btn-red">
+Enviar e-mail
+</a>
+
+</div>
+</div>
+</section>
+
+<!-- Adaptação estrutural da faixa para funcionar melhor em celulares e computadores -->
+<div class="faixa">
+    <span>✓ Técnicas Le Cordon Bleu</span><span class="separador"> &nbsp;&nbsp;|&nbsp;&nbsp; </span>
+    <span>✓ Hotelaria 4 e 5 estrelas</span><span class="separador"> &nbsp;&nbsp;|&nbsp;&nbsp; </span>
+    <span>✓ Treinamento de Equipes</span><span class="separador"> &nbsp;&nbsp;|&nbsp;&nbsp; </span>
+    <span>✓ Consultoria Operacional</span><span class="separador"> &nbsp;&nbsp;|&nbsp;&nbsp; </span>
+    <span>✓ Atendimento Residencial</span>
+</div>
+
+<section id="sobre">
+<div class="container">
+<h2 class="titulo">Quem é Paulo Souza</h2>
+
+<div class="sobre">
+<img src="images/paulo-hero.png" alt="Chef Paulo Souza">
+
+<div>
+<p>
+Paulo Souza é Chef Executivo de Cozinha e Consultor Gastronômico, com sólida trajetória na liderança de operações gastronômicas em restaurantes, hotéis e empreendimentos de grande porte.
+</p>
+<br>
+<p>
+Ao longo de sua carreira, atuou em renomadas organizações como Resort Fazenda 3 Pinheiros, Rede Bourbon, Hotel Venit Barra da Tijuca, Hotel Glória e CBF Gastronomia, acumulando ampla experiência em gestão de equipes, development de cardápios e excelência operacional.
+</p>
+<br>
+<p>
+É especialista na formação e capacitação de equipes, otimização de processos, redução de desperdícios e aumento da produtividade. Possui ainda destacada expertise em panificação, confeitaria, gastronomia internacional e implantação de padrões e procedimentos voltados à qualidade, eficiência e rentabilidade das operações. Atende a todo o Rio de Janeiro e Região dos Lagos.
+</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="servicos">
+<div class="container">
+<h2 class="titulo">Serviços</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Consultoria & Assessoria</h3>
+<ul>
+<li>Cardápio personalizado</li>
+<li>Montagem de Delivery</li>
+<li>Fichas técnicas</li>
+<li>Controle de custos</li>
+<li>Precificação</li>
+<li>Padronização</li>
+<li>Fábrica de Salgados</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Treinamentos Operacionais</h3>
+<ul>
+<li>Equipe de cozinha e salão</li>
+<li>Manipulação e porcionamento de alimentos</li>
+<li>Panificação</li>
+<li>Aperfeiçoamento de Buffet</li>
+<li>Forno combinado</li>
+<li>Manipulação de Maquinário</li>
+<li>Montagem de Fábrica</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Alta Cozinha & Panificação</h3>
+<ul>
+<li>Brasileira</li>
+<li>Japonesa</li>
+<li>Mexicana</li>
+<li>Francesa</li>
+<li>Italiana</li>
+<li>Patisserie</li>
+<li>Vegetariana</li>
+<li>Crudíveros</li>
+</ul>
+</div>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2 class="titulo">Problemas que Resolvemos</h2>
+
+<div class="problemas">
+<div class="box">
+<h3>Problemas</h3>
+<ul>
+<li>❌ Alto desperdício</li>
+<li>❌ Equipe desorganizada</li>
+<li>❌ Baixa lucratividade</li>
+<li>❌ Delivery sem resultado</li>
+<li>❌ Falta de padronização</li>
+</ul>
+</div>
+
+<div class="box">
+<h3>Soluções</h3>
+<ul>
+<li>✅ Operação eficiente</li>
+<li>✅ Equipe treinada</li>
+<li>✅ Redução de custos</li>
+<li>✅ Maior rentabilidade</li>
+<li>✅ Processos padronizados</li>
+</ul>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="beneficios">
+<div class="container">
+<h2 class="titulo">Benefícios</h2>
+
+<div class="beneficios">
+<div class="beneficio"><div class="numero">01</div>Redução de desperdícios</div>
+<div class="beneficio"><div class="numero">02</div>Melhor aproveitamento de insumos</div>
+<div class="beneficio"><div class="numero">03</div>Padronização dos processos</div>
+<div class="beneficio"><div class="numero">04</div>Mais produtividade</div>
+<div class="beneficio"><div class="numero">05</div>Melhor experiência dos clientes</div>
+</div>
+
+</div>
+</section>
+
+<section id="atuacao">
+<div class="container">
+<h2 class="titulo">Áreas de Atuação</h2>
+
+<div class="atuacao">
+<div class="item">🍽 Restaurantes</div>
+<div class="item">🏨 Hotéis</div>
+<div class="item">🎉 Casas de Festa</div>
+<div class="item">☕ Cafeterias</div>
+<div class="item">🥖 Padarias</div>
+<div class="item">🍺 Bares</div>
+<div class="item">🏭 Cozinhas Industriais</div>
+<div class="item">🏠 Atendimento Residencial</div>
+</div>
+
+</div>
+</section>
+
+<section class="cta" id="contato">
+<div class="container">
+<h2>Sua cozinha está operando no máximo potencial?</h2>
+<p>Solicite uma conversa sem compromisso e descubra oportunidades de melhoria para sua operação.</p>
+<a href="https://wa.me/5522981677446" class="btn btn-whats">
+Solicitar orçamento via Whatsapp
+</a>
+<a href="mailto:chefpaulosouza7@gmail.com" class="btn btn-red">
+Enviar e-mail
+</a>
+</div>
+</section>
+
+<footer>
+<img src="images/logo-paulo-souza.png" alt="Logo Paulo Souza">
+<p><strong>WhatsApp:</strong> (22) 98167-7446</p>
+<br>
+<p><strong>E-mail:</strong> chefpaulosouza7@gmail.com</p>
+<br>
+<p>© Paulo Souza - Chef Executivo de Cozinha</p>
+</footer>
+
+<a href="https://wa.me/5522981677446" class="whatsapp-float">
+💬
+</a>
+
+</body>
+</html>
